@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coro Emmanuel</title>
+  <meta name="description" content="Coro Emanuel: un espacio para jóvenes que quieren alabar, crecer y servir a través de la música." />
+
+  <!-- Vista previa -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coro Emmanuel">
+  <meta property="og:description" content="Un coro que canta lo que las palabras no alcanzan a decir. Únete a Emmanuel.">
+  <meta property="og:image" content="https://TU-DOMINIO-AQUI.vercel.app/img/og-cover.webp">
+  <meta property="og:url" content="https://TU-DOMINIO-AQUI.vercel.app">
+  <meta property="og:locale" content="es_GT">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icono.png">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="#inicio" class="topbar__brand">Emmanuel</a>
+    <nav class="topbar__nav">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#hacemos">Qué hacemos</a>
+      <a href="#galeria">En acción</a>
+      <a href="#unete">Únete</a>
+    </nav>
+    <a href="#unete" class="topbar__cta">Quiero unirme</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__kicker">Coro</p>
+        <h1 class="hero__title">Emmanuel</h1>
+        <p class="hero__tagline">Un coro que canta lo que las palabras no alcanzan a decir.</p>
+        <div class="hero__actions">
+          <a href="#unete" class="btn btn--primary">Quiero unirme</a>
+          <a href="#nosotros" class="btn btn--ghost">Conocer más</a>
+        </div>
+      </div>
+      <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,60 C 180,120 360,0 540,60 C 720,120 900,0 1080,60 C 1260,120 1350,60 1440,60 L1440,120 L0,120 Z" fill="#FBF6EE"/>
+      </svg>
+    </section>
+
+
+
+
+<!--Corousel-->
+    <div class="carousel">
+
+
+        <div class="carousel-list" id="carousel-list">
+
+            <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <div class="carousel-track" id="track">
+
+
+              <!--div 1-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Coro</small>Parroquial</h4>
+                    <picture>
+                      <img src="img/foto1.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+               <!--div 2-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Acompañamos</small>Hora Santa</h4>
+                    <picture>
+                      <img src="img/foto2.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                            <!--div 3-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Nuestra</small>Parroquia</h4>
+                    <picture>
+                      <img src="img/foto3.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                                          <!--div 3.1-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Emmanuel</small>Dios con nosotros</h4>
+                    <picture>
+                      <img src="img/foto3.1.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+
+
+                            <!--div 4-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Canta con</small>Nosotros en Misa</h4>
+                    <picture>
+                      <img src="img/foto4.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                            <!--div 5-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>En la liturgia, tu voz no solo llena el templo,</small>también abre el cielo.</h4>
+                    <picture>
+                      <img src="img/foto5.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                            <!--div 6 -->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Jesús es</small>Pan y Vino</h4>
+                    <picture>
+                      <img src="img/foto6.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                            <!--div 7-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>La Misa es el momento en que</small>el cielo y la tierra se unen.</h4>
+                    <picture>
+                      <img src="img/foto7.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+                            <!--div 8-->
+              <div class="carrusel">
+                <div>
+                  <a href="/">
+                    <h4><small>Cantemos al</small>Señor de señores</h4>
+                    <picture>
+                      <img src="img/foto8.webp" alt="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+ 
+            <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="nosotros" class="section section--light">
+      <div class="section__grid">
+        <div class="section__text">
+          <h2>Quiénes somos</h2>
+          <p>Emmanuel es un coro de nuestra iglesia: un grupo de personas dispuestas a servir descubrió que la voz y la música, también es una forma de servir. No buscamos perfección técnica, buscamos corazones dispuestos a alabar juntos.</p>
+          <p>Ensayamos, aprendemos, nos equivocamos y volvemos a intentarlo — y en el camino se han formado amistades que van mucho más allá de la música.</p>
+          <p>Nuestro propósito es simple: usar el canto y la música para acercar a más jóvenes a Dios y unos a otros.</p>
+        </div>
+        <div class="section__quote">
+          <p>"Cantad a Dios, cantad; cantad a nuestro Rey, cantad."</p>
+          <span>Salmo 47:6</span>
+        </div>
+        <div class="section__quote">
+          <p>"Si conociéramos el valor de la Santa Misa, ¡qué gran esfuerzo haríamos por asistir a ella!"</p>
+          <span>San Juan María Vianney</span>
+        </div>
+        <div class="section__quote">
+          <p>"El coro no canta para ser escuchado, sino para que Dios sea alabado." </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ HACEMOS -->
+    <section id="hacemos" class="section section--light section--tight">
+      <h2 class="section__heading">Qué hacemos</h2>
+
+      <div class="container-funcion">
+         <!-- Aquí va tu título principal "Qué hacemos" -->
+          <div class="section_funcion">
+            <h3>La función del coro y lugar en la liturgia</h3>
+            <p>Saber, que forman parte de la asamblea de los fieles y realizan una función particular. Sacrosanctum concilium 23.</p>
+          </div>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Alabar</h3>
+          <p>Participamos en los servicios y celebraciones de la iglesia, poniendo la voz al servicio de la adoración.</p>
+        </article>
+        <article class="card">
+          <h3>Crecer juntos</h3>
+          <p>Ensayamos cada semana: técnica vocal, armonía, y sobre todo, crecer en comunidad.</p>
+        </article>
+        <article class="card">
+          <h3>Servir</h3>
+          <p>Acompañamos eventos especiales, visitas y actividades donde la música puede llevar un mensaje de esperanza.</p>
+        </article>
+        <article class="card">
+          <h3>Compartir el don</h3>
+          <p>Creemos que cantar es un don para compartir, no para guardar. Aquí caben voces de todos los niveles.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section section--dark">
+      <h2 class="section__heading section__heading--light">El coro en acción</h2>
+      <p class="section__sub">Así vivimos los ensayos y presentaciones. <!-- Reemplaza estas imágenes en /img con fotos reales del coro --></p>
+  <div class="gallery">
+    <!-- 1. Foto Grande (Ocupa 2x2) -->
+    <div class="gallery__item gallery__item--large">
+      <img src="img/Accion/foto0.webp" alt="Foto principal" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 2. Foto Normal -->
+    <div class="gallery__item">
+      <img src="img/Accion/foto1.webp" alt="Foto 2" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 3. Foto Alta (Ocupa 2 filas) -->
+    <div class="gallery__item gallery__item--tall">
+      <img src="img/Accion/foto2.webp" alt="Foto 3" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 4. Foto Ancha (Ocupa 2 columnas) -->
+    <div class="gallery__item gallery__item--wide foto-subir">
+      <img src="img/Accion/foto3.webp" alt="Foto 4" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 5. Foto Normal -->
+    <div class="gallery__item">
+      <img src="img/Accion/foto4.webp" alt="Foto 5" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 6. Foto Normal (Ayuda a rellenar debajo de la alta) -->
+    <div class="gallery__item">
+      <img src="img/Accion/foto5.webp" alt="Foto 6" onclick="app.openLightbox(event)">
+    </div>
+
+    <!-- 7. Otra Foto Ancha para equilibrar el diseño -->
+    <div class="gallery__item gallery__item--wide">
+      <img src="img/Accion/foto6.webp" alt="Foto 7" onclick="app.openLightbox(event)">
+    </div>
+  </div>  </div>  
+</section>
+ 
+
+    <!-- VIDEO -->
+    <section id="video" class="section section--dark video-section">
+      <div class="video-section__glow" aria-hidden="true"></div>
+      <h2 class="section__heading section__heading--light">Videos por tiempo litúrgico</h2>
+      <p class="section__sub">Así suena Emmanuel en cada tiempo del año litúrgico.</p>
+
+      <div class="liturgical-tabs" id="liturgical-tabs"></div>
+
+      <div class="video-frame" id="video-frame">
+        <img src="" alt="" class="video-frame__poster" id="video-poster">
+        <button class="video-frame__play" aria-label="Reproducir video" onclick="app.loadVideo(event)">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+            <path d="M8 5v14l11-7z" fill="currentColor"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
+
+    <!-- CÓMO UNIRTE -->
+    <section id="unete" class="section section--light">
+      <div class="join">
+        <div class="join__text">
+          <h2>¿Quieres unirte?</h2>
+          <p>No necesitas experiencia previa, solo ganas de alabar y aprender. Todos empezamos en algún punto.</p>
+          <ul class="join__details">
+            <li><strong>Ensayos:</strong> Días viernes a las 7:15PM</li>
+            <li><strong>Lugar:</strong> En la iglesia parroquial / Salón de coros</li>
+            <li><strong>Requisitos:</strong> Ninguno — solo tu voz y tu disposición</li>
+          </ul>
+        </div>
+        <div class="join__contact">
+          <p class="title-redes">Escríbenos y te contamos cómo es tu primer ensayo.</p>
+          <p class="text-redes">Haz clic en los siguientes botones para dirijirte a nuestras redes:</p>
+          <a href="https://api.whatsapp.com/send?phone=50259386054" class="btn btn--primary" target="_blank" rel="noopener">Escríbenos por WhatsApp - tel. No. 1<span class="icon-whats"><img src="img/icons8-whatsapp-48.png" alt=""></span></a>
+          <a href="https://api.whatsapp.com/send?phone=50237910185" class="btn btn--primary" target="_blank" rel="noopener">Escríbenos por WhatsApp - tel. No. 2<span class="icon-whats"><img src="img/icons8-whatsapp-48.png" alt=""></span></a>
+          <a href="https://www.facebook.com/share/1EJ5dmqSsT/" class="btn btn--ghost" target="_blank" rel="noopener">Síguenos en Facebook <span class="icon-face"><img src="img/iconoFacebook.png" alt="iconFace"></span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand">Emmanuel</p>
+    <p class="infoFooter">Coro juvenil — cantando con propósito.</p>
+  </footer>
+    <!-- Lightbox para ver fotos ampliadas -->
+  <div class="lightbox" id="lightbox" onclick="app.closeLightbox(event)">
+    <button class="lightbox__close" aria-label="Cerrar" onclick="app.closeLightbox(event)">&times;</button>
+    <img src="" alt="" class="lightbox__img" id="lightbox-img" onclick="event.stopPropagation()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
