@@ -39,6 +39,29 @@ App.prototype.closeLightbox = function(event) {
     document.body.style.overflow = '';
 }
 
+App.prototype.closeLightbox = function(event) {
+    document.getElementById('lightbox').classList.remove('is-open');
+    document.body.style.overflow = '';
+}
+
+App.prototype.shareSite = function(event) {
+    const shareData = {
+        title: 'Coro Emmanuel',
+        text: '¡Conoce el coro Emmanuel y anímate a unirte!',
+        url: window.location.origin
+    };
+
+    if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+    } else {
+        navigator.clipboard.writeText(shareData.url);
+        const btn = document.getElementById('topbar-share');
+        const original = btn.innerHTML;
+        btn.innerHTML = '✓';
+        setTimeout(() => { btn.innerHTML = original; }, 2000);
+    }
+}
+
 
 let prevAction = (leftPosition, carruselWidth, track) => {
     if (leftPosition > 0) {
