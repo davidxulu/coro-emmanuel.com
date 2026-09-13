@@ -134,6 +134,30 @@ a:focus-visible, button:focus-visible {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.topbar__share {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.topbar__share:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 780px) {
   .topbar__nav { display: none; }
   .topbar { padding: 1rem 1.25rem; }
@@ -495,7 +519,7 @@ a{
 .gallery__item {
   position: relative;
   width: 100%;
-  height: 100%; /* El grid controla la altura total de forma estricta */
+  height: 100%; 
   border-radius: 16px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.05);
@@ -522,7 +546,7 @@ a{
   object-position: center 43% !important;
 }
 
-/* Estilo unificado para recortar/posicionar imágenes especiales */
+
 .gallery__item--wide img,
 .gallery__item--large img {
   object-position: center 48%;
@@ -567,13 +591,13 @@ a{
   }
 
   .gallery__item--tall {
-    grid-row: span 2;   /* Mantiene el diseño vertical en móvil */
+    grid-row: span 2;   
   }
 
   .gallery__item--wide,
   .gallery__item--large {
-    grid-column: span 2; /* Ocupan todo el ancho del móvil para que no colapsen */
-    grid-row: span 1;    /* Forzamos a que ocupen solo 1 fila de alto en móvil */
+    grid-column: span 2; 
+    grid-row: span 1;   
   }
 }
 
