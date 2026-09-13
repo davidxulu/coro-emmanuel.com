@@ -60,8 +60,8 @@ let nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => 
 const liturgicalTimes = [
   { id: 'adviento',  label: 'Adviento',         color: '#6B3FA0', youtubeId: 'PON_ID_ADVIENTO',  poster: 'img/videos/adviento.webp' },
   { id: 'navidad',   label: 'Navidad',          color: '#D4AF37', youtubeId: 'IYwSWN_G4i4',   poster: 'img/videos/navidad.webp' },
-  { id: 'cuaresma',  label: 'Cuaresma',         color: '#5C3B70', youtubeId: 'PON_ID_CUARESMA',  poster: 'img/videos/cuaresma.webp' },
-  { id: 'pascua',    label: 'Pascua',           color: '#F2C14E', youtubeId: 'PON_ID_PASCUA',    poster: 'img/videos/pascua.webp' },
+  { id: 'cuaresma',  label: 'Cuaresma',         color: '#5C3B70', youtubeId: 'fOnHdXtAojQ',  poster: 'img/videos/cuaresma.webp' },
+  { id: 'pascua',    label: 'Pascua',           color: '#F2C14E', youtubeId: 'Xpfun_Uh5Wg?feature=share',    poster: 'img/videos/pascua.webp' },
   { id: 'ordinario', label: 'Tiempo Ordinario', color: '#4C8C4A', youtubeId: 'PON_ID_ORDINARIO', poster: 'img/videos/ordinario.webp' },
 ];
 
