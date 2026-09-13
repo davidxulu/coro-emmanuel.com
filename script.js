@@ -32,22 +32,27 @@ App.prototype.openLightbox = function(event) {
     lightboxImg.alt = img.alt;
     lightbox.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    history.pushState({ lightboxOpen: true }, '');
 }
 
 App.prototype.closeLightbox = function(event) {
-    document.getElementById('lightbox').classList.remove('is-open');
-    document.body.style.overflow = '';
+    if (document.getElementById('lightbox').classList.contains('is-open')) {
+        history.back();
+    }
 }
 
-App.prototype.closeLightbox = function(event) {
-    document.getElementById('lightbox').classList.remove('is-open');
-    document.body.style.overflow = '';
-}
+window.addEventListener('popstate', function(event) {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.classList.contains('is-open')) {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+});
 
 App.prototype.shareSite = function(event) {
     const shareData = {
         title: 'Coro Emmanuel',
-        text: '¡Conoce el coro Emmanuel y anímate a unirte!',
+        text: '¡Conoce a coro Emmanuel y anímate a unirte!¡Visita nuestra página web!',
         url: window.location.origin
     };
 
